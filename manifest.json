@@ -1,0 +1,22 @@
+{
+    "name": "GameZitos - Loja de Jogos",
+    "short_name": "GameZitos",
+    "description": "Sua loja de jogos digitais",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0a0618",
+    "theme_color": "#1a0a2e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}   

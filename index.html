@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a0a2e">
+    <meta name="description" content="GameZitos - Sua loja de jogos digitais">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>GameZitos</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="topbar">
+        <div>
+            <span class="small-title">🎮 GAMEZITOS</span>
+            <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="avatar">🛒</div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ==================== PÁGINA: DASHBOARD ==================== -->
+        <section id="page-dashboard" class="page active">
+
+            <!-- CARDS -->
+            <section class="cards">
+                <article class="card">
+                    <span>💰</span>
+                    <p>Vendas Hoje</p>
+                    <h2 id="vendas">R$ 3.750</h2>
+                </article>
+                <article class="card">
+                    <span>🎮</span>
+                    <p>Jogos Vendidos</p>
+                    <h2 id="pedidos">67</h2>
+                </article>
+                <article class="card">
+                    <span>👥</span>
+                    <p>Clientes</p>
+                    <h2 id="clientes">203</h2>
+                </article>
+                <article class="card">
+                    <span>⭐</span>
+                    <p>Avaliação</p>
+                    <h2 id="produtos">4.9 ★</h2>
+                </article>
+            </section>
+
+            <!-- AÇÕES RÁPIDAS -->
+            <section class="section">
+                <div class="section-title">
+                    <div>
+                        <span class="tag">ATALHOS</span>
+                        <h2>Ações rápidas</h2>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button onclick="mostrarMensagem('🆕 Novo jogo adicionado!')">➕ Adicionar Jogo</button>
+                    <button onclick="mostrarMensagem('💰 Venda registrada!')">💵 Nova Venda</button>
+                    <button onclick="mostrarMensagem('👤 Cliente cadastrado!')">👤 Novo Cliente</button>
+                </div>
+            </section>
+
+            <!-- GRÁFICO -->
+            <section class="section">
+                <div class="section-title">
+                    <div>
+                        <span class="tag">ANÁLISE</span>
+                        <h2>Vendas da Semana</h2>
+                    </div>
+                </div>
+                <div class="chart">
+                    <div class="bar" style="height: 45%"></div>
+                    <div class="bar" style="height: 65%"></div>
+                    <div class="bar" style="height: 55%"></div>
+                    <div class="bar" style="height: 80%"></div>
+                    <div class="bar" style="height: 70%"></div>
+                    <div class="bar" style="height: 95%"></div>
+                    <div class="bar" style="height: 60%"></div>
+                </div>
+                <div class="months">
+                    <span>Seg</span><span>Ter</span><span>Qua</span>
+                    <span>Qui</span><span>Sex</span><span>Sáb</span><span>Dom</span>
+                </div>
+            </section>
+
+            <!-- ALERTA -->
+            <section class="alert">
+                <span>🎯</span>
+                <div>
+                    <strong>Promoção Especial!</strong>
+                    <p>Jogos selecionados com até 40% de desconto esta semana.</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- ==================== PÁGINA: LOJA ==================== -->
+        <section id="page-loja" class="page">
+            <div class="page-header">
+                <h2>🎮 Catálogo de Jogos</h2>
+                <button class="btn-add" onclick="mostrarMensagem('🛒 Carrinho aberto!')">🛒 Carrinho</button>
+            </div>
+
+            <div class="games-grid">
+                <!-- JOGO 1: Hollow Knight Silksong -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="silksong.jpeg" alt="Hollow Knight Silksong">
+                        <div class="game-price">R$ 89,90</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Hollow Knight Silksong</h3>
+                        <p>Ação • Aventura • Metroidvania</p>
+                        <div class="game-rating">⭐ 4.9</div>
+                        <button class="btn-buy" onclick="mostrarMensagem(' Hollow Knight Silksong adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JOGO 2: Red Dead Redemption 2 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="rdr2.jpeg" alt="Red Dead Redemption 2">
+                        <div class="game-price">R$ 149,90</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Red Dead Redemption 2</h3>
+                        <p>Ação • Aventura • Mundo Aberto</p>
+                        <div class="game-rating">⭐ 4.9</div>
+                        <button class="btn-buy" onclick="mostrarMensagem(' Red Dead Redemption 2 adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JOGO 3: Tomodachi Life -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="tomodachi.jpeg" alt="Tomodachi Life">
+                        <div class="game-price">R$ 129,90</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Tomodachi Life</h3>
+                        <p>Simulação • Vida • Comédia</p>
+                        <div class="game-rating">⭐ 4.7</div>
+                        <button class="btn-buy" onclick="mostrarMensagem('Tomodachi Life adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JOGO 4: The Last of Us -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="tlou2.jpeg" alt="The Last of Us">
+                        <div class="game-price">R$ 199,90</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>The Last of Us</h3>
+                        <p>Survival • Terror • Drama</p>
+                        <div class="game-rating">⭐ 4.9</div>
+                        <button class="btn-buy" onclick="mostrarMensagem(' The Last of Us adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JOGO 5: Elden Ring -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="eldenring.jpeg" alt="Elden Ring">
+                        <div class="game-price">R$ 199,90</div>
+                        <div class="game-discount">-40%</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Elden Ring</h3>
+                        <p>RPG • Ação • Soulslike</p>
+                        <div class="game-rating">⭐ 4.9</div>
+                        <button class="btn-buy" onclick="mostrarMensagem(' Elden Ring adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- JOGO 6: Detroit Become Human -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="28.jpeg" alt="Detroit Become Human">
+                        <div class="game-price">R$ 99,90</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Detroit Become Human</h3>
+                        <p>Narrativo • Escolhas • Ficção</p>
+                        <div class="game-rating">⭐ 4.8</div>
+                        <button class="btn-buy" onclick="mostrarMensagem('Detroit Become Human adicionado ao carrinho!')">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PÁGINA: VENDAS ==================== -->
+        <section id="page-vendas" class="page">
+            <div class="page-header">
+                <h2>💰 Financeiro</h2>
+                <button class="btn-add" onclick="mostrarMensagem('📊 Relatório gerado!')">📊 Relatório</button>
+            </div>
+
+            <div class="finance-cards">
+                <div class="finance-card income">
+                    <span>📈</span>
+                    <p>Receita Total</p>
+                    <h3>R$ 67.000</h3>
+                </div>
+                <div class="finance-card expense">
+                    <span>📉</span>
+                    <p>Custos</p>
+                    <h3>R$ 9.230</h3>
+                </div>
+                <div class="finance-card balance">
+                    <span>💎</span>
+                    <p>Lucro</p>
+                    <h3>R$ 19.220</h3>
+                </div>
+            </div>
+
+            <div class="recent-sales">
+                <h3>📋 Últimas Vendas</h3>
+                <ul class="sales-list">
+                    <li>
+                        <span> Hollow Knight Silksong</span>
+                        <span class="sale-info">R$ 89,90 <span class="sale-date">Hoje</span></span>
+                    </li>
+                    <li>
+                        <span> Red Dead Redemption 2</span>
+                        <span class="sale-info">R$ 149,90 <span class="sale-date">Ontem</span></span>
+                    </li>
+                    <li>
+                        <span> Tomodachi Life</span>
+                        <span class="sale-info">R$ 129,90 <span class="sale-date">Ontem</span></span>
+                    </li>
+                    <li>
+                        <span> The Last of Us</span>
+                        <span class="sale-info">R$ 199,90 <span class="sale-date">3 dias</span></span>
+                    </li>
+                    <li>
+                        <span> Elden Ring</span>
+                        <span class="sale-info">R$ 199,90 <span class="sale-date">4 dias</span></span>
+                    </li>
+                    <li>
+                        <span> Detroit Become Human</span>
+                        <span class="sale-info">R$ 99,90 <span class="sale-date">5 dias</span></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==================== PÁGINA: PERFIL ==================== -->
+        <section id="page-perfil" class="page">
+            <div class="profile-container">
+                <div class="profile-avatar">🎮</div>
+                <h2>João o mais lindo</h2>
+                <p class="profile-email">joaolindeza@gmail.com</p>
+
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span>🎮</span>
+                        <strong>203</strong>
+                        <small>Jogos vendidos</small>
+                    </div>
+                    <div class="stat-item">
+                        <span>⭐</span>
+                        <strong>4.9</strong>
+                        <small>Avaliação média</small>
+                    </div>
+                    <div class="stat-item">
+                        <span>🏆</span>
+                        <strong>48</strong>
+                        <small>Vendas esta semana</small>
+                    </div>
+                </div>
+
+                <button class="btn-profile" onclick="mostrarMensagem('⚙️ Configurações abertas!')">
+                    ⚙️ Configurações
+                </button>
+                <button class="btn-profile logout" onclick="mostrarMensagem('🚪 Saindo...')">
+                    🚪 Sair
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MENU INFERIOR -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-page="dashboard">
+            🏠 <span>Início</span>
+        </button>
+        <button class="nav-btn" data-page="loja">
+            🎮 <span>Loja</span>
+        </button>
+        <button class="nav-btn" data-page="vendas">
+            💰 <span>Vendas</span>
+        </button>
+        <button class="nav-btn" data-page="perfil">
+            👤 <span>Perfil</span>
+        </button>
+    </nav>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
